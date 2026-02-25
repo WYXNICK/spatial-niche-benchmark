@@ -1,10 +1,10 @@
-# Benchmarking niche identification methods for spatial transcriptomics data
+# Benchmarking niche identification via domain segmentation for spatial transcriptomics data
 
 ## Overview
 
 Spatial niche identification aims to partition tissue into multicellular microenvironments that are defined by coordinated cell type composition and spatially structured cellular states, using spatially resolved expression measurements. Across tissues, such microenvironments can reflect recurrent cellular neighborhoods, context-dependent state programs, and local cell–cell interactions that are not fully captured by gene expression alone or by coarse anatomical landmarks. Niches may align with anatomy in some settings, but they can also be sharply separated yet internally heterogeneous, appear as non-contiguous islands embedded within larger compartments, or vary continuously along gradients. These properties make it difficult to infer method performance from a single reference setting, motivating a benchmark that jointly probes multiple niche geometries and practical data regimes under a consistent task definition.
 
-This repository contains the benchmarking framework and code for our paper. We evaluate 16 representative algorithms spanning probabilistic models, graph neural networks, deep generative models, and foundation models. The benchmark quantifies performance across complementary axes including agreement with reference niches, spatial coherence, biological consistency, and computational efficiency (runtime and memory).
+This repository contains the benchmarking framework and code for our paper. We evaluate 16 representative algorithms spanning probabilistic models, graph neural networks, deep generative models, and foundation models. The benchmark quantifies performance across complementary axes including agreement with reference niches (accuracy), spatial structure and boundary fidelity (connectivity), biological consistency of inferred niches (composition similarity), quality of learned embeddings (silhouette score), and computational efficiency (runtime and memory).
 
 ## Benchmark Methods
 
